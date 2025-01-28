@@ -1,6 +1,12 @@
-# --------- folders --------- 
+# --------- whole folders --------- 
 qBittorrent/
+zsh/*
 
-# --------- files --------- 
+# --------- files within folders --------- 
+!zsh/.zprofile
+!zsh/.zshrc
+!zsh/starship.toml
+
+# --------- root files --------- 
 .DS_Store
 

@@ -1,5 +1,6 @@
 # --------- whole folders --------- 
-qBittorrent/
+gh/*
+qBittorrent/*
 zsh/*
 
 # --------- files within folders --------- 

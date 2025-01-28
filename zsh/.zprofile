@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/diogonapoles/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin:$PATH"
 
 export ZSH="$ZDOTDIR/.oh-my-zsh"
 export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"

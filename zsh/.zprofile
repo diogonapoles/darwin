@@ -13,3 +13,5 @@ export XDG_CACHE_HOME="$HOME/.cache"
 if [[ -f ~/.zshrc ]] then
   source ~/.zshrc
 fi
+
+eval "$(brew shellenv)"

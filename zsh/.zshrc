@@ -5,8 +5,6 @@ bindkey -e
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.config/zsh/.zshrc'
-autoload -Uz compinit
-compinit
 
 # This will prevent the typed characters from being displayed on the terminal before loading zsh, followed by the % prompt.
 unsetopt PROMPT_SP
@@ -26,8 +24,6 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
-command -v starship &>/dev/null && eval "$(starship init zsh)"
-
 plugins=(
 	git
 	zsh-syntax-highlighting
@@ -35,13 +31,8 @@ plugins=(
 	you-should-use
 )
 
-# Plugins
-# source $ZDOTDIR/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# FPATH="$ZDOTDIR/completions:$FPATH"
 autoload -Uz compinit
 compinit
 
 source $ZSH/oh-my-zsh.sh
-
-eval "$(starship init zsh)"
+command -v starship &>/dev/null && eval "$(starship init zsh)"

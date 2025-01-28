@@ -1,0 +1,85 @@
+format = """
+ $all 
+"""
+right_format = """$time"""
+
+#--------- general ---------
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+fish_style_pwd_dir_length = 3
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+vimcmd_symbol = '[❮](bold green)'
+vimcmd_replace_one_symbol = '[❮](bold pink)'
+vimcmd_replace_symbol = '[❮](bold pink)'
+vimcmd_visual_symbol = '[❮](bold mauve)'
+
+[username]
+show_always = true
+format = '[꩜ $user]($style) in '
+style_user = 'bold sapphire'
+
+#--------- git ---------
+[git_branch]
+style = 'bold mauve'
+symbol = " "
+truncation_length = 5   
+
+[git_state]
+rebase = "rebasing"
+merge = "merging"
+revert = "reverting"
+cherry_pick = " picking"
+bisect = "bisecting"
+am = "am'ing"
+am_or_rebase = "am/rebase"
+
+[git_status]
+disabled = false
+stashed = " ${count} "
+ahead = "󰞙 ${count} "
+behind = "󰞒 ${count} "
+diverged = "󰵉 ${ahead_count} ${behind_count} "
+conflicted = " ${count} "
+deleted = " ${count} "
+renamed = " ${count} "
+modified = " ${count} "
+staged = " ${count} "
+untracked = "󱅘 ${count}"
+#--------- lang ---------
+[java]
+symbol = ' '
+style = 'bold maroon'
+
+[python]
+symbol = ' '
+style = 'bold sapphire'
+
+[lua]
+symbol = ' '
+style = 'bold sky'
+
+[terraform]
+symbol = '⛏ '
+
+[docker_context]
+symbol = " "
+only_with_files = true
+
+[c]
+symbol = ' '
+
+[nodejs]
+symbol = "󰎙 "
+
+[golang]
+symbol = ' '
+
+[haskell]
+symbol = ' '
+
+[package]
+symbol = " "

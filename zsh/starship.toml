@@ -1,6 +1,4 @@
-format = """
- $all 
-"""
+format = """$all"""
 right_format = """$time"""
 
 #--------- general ---------

@@ -17,14 +17,17 @@ vimcmd_visual_symbol = '[❮](bold mauve)'
 
 [username]
 show_always = true
-format = '[꩜ $user]($style) in '
+format = '[꩜ diogonapoles]($style) in '
 style_user = 'bold sapphire'
 
 #--------- git ---------
+[package]
+disabled = true
+
 [git_branch]
 style = 'bold mauve'
 symbol = " "
-truncation_length = 5   
+# truncation_length = 5   
 
 [git_state]
 rebase = "rebasing"
@@ -40,7 +43,7 @@ disabled = false
 stashed = " ${count} "
 ahead = "󰞙 ${count} "
 behind = "󰞒 ${count} "
-diverged = "󰵉 ${ahead_count} ${behind_count} "
+diverged = "󰵉 a:${ahead_count} | b:${behind_count} "
 conflicted = " ${count} "
 deleted = " ${count} "
 renamed = " ${count} "
@@ -78,6 +81,3 @@ symbol = ' '
 
 [haskell]
 symbol = ' '
-
-[package]
-symbol = " "

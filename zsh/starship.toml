@@ -2,6 +2,9 @@ format = """$all"""
 right_format = """$time"""
 
 #--------- general ---------
+[battery]
+disabled = true
+
 [directory]
 truncation_length = 4
 truncate_to_repo = true
